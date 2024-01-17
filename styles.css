@@ -1,0 +1,182 @@
+**::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body  {
+    margin: 0;
+    padding: 0;
+     height: 100%; 
+ }
+
+.wrapper{
+    width: 100vw;
+    height:100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+} 
+h1{
+  
+
+    color: skyblue;
+    opacity: 1;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight:500 ;
+    transform: translateX(-10%);
+
+
+}
+
+p{
+    color: palevioletred;
+    margin-top: 2px;
+    font-weight: 300;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    padding: 5px;
+    transform: translateX(-10%);
+
+}
+.main-div{
+    /* position: relative; */
+    width: 90%;
+    max-width: 450px;
+   margin: 0 auto;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-shadow: 2px 2px 5px #888;
+   padding-top:1.5rem;
+   /* position: relative; */
+   background-color:lightblue;
+   padding-left: 2rem;
+}
+.taskadd-container{
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.task-input{
+   width: 90%;
+padding: 0.5rem 0.5rem;
+color:black;
+font-weight: 400;
+font-size: 1rem;
+line-height: 10px;
+letter-spacing: 1px;
+border: none;
+}
+
+.task-input::placeholder{
+    position: absolute;
+    top: 20%;
+   transform: translateY(15%);
+
+
+}
+.add-btn{
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding:0.5rem 0.5rem ;
+
+}
+.add-btn i{
+    /* width: 10px; */
+    font-size:17px ;
+    font-weight: 500;
+}
+
+
+
+.todo-list{
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+
+}
+
+
+
+li{
+   
+    width: 50%;
+    padding: 0.5rem 0.5rem;
+    color:black;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 5px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+     /* border: 1px solid white; */
+    
+   
+}
+.task.completed {
+    text-decoration: line-through;
+    color: #aaa;
+    /* gap: 2px; */
+}
+.complete-checkbox{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: absolute;
+   transform: translateX(-280%);
+
+
+}
+.complete-checkbox:checked::before{
+    content: '✔';
+    position: absolute;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    top:-4px;
+    bottom: -2px;
+
+}
+.delete-btn{
+    /* appearance: none; */
+    width: 15px;
+    height: 15px;
+    border: 1px transparent;
+    cursor: pointer;
+    position: absolute;
+   transform: translateX(160%);
+   margin-left: 300px;
+   background-color: lightblue;
+}
+.delete-btn i{
+    position: absolute;
+    color: black;
+    font-size: 1.05rem;
+    font-weight: 500;
+    top:-2px;
+    bottom: 1px;
+    right: 1px;
+    border: none;
+    left:1px ;
+
+}
+
